@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margins -->
+    <dimen name="small_margin">4dp</dimen>
+    <dimen name="element_margin">8dp</dimen>
+    <dimen name="medium_margin">12dp</dimen>
+    <dimen name="page_margin">16dp</dimen>
+    <dimen name="middle_margin">20dp</dimen>
+    <dimen name="big_margin">24dp</dimen>
+    <dimen name="page_margin_x2">32dp</dimen>
+    <dimen name="margin_top_boost">8dp</dimen>
+</resources>

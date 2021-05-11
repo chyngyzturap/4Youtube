@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allPlaylistsFragment">
+
+
+    <fragment
+        android:id="@+id/allPlaylistsFragment"
+        android:name="com.pharos.foryoutube.ui.playlist.AllPlaylistsFragment"
+        android:label="fragment_all_playlists"
+        tools:layout="@layout/fragment_all_playlists" >
+        <action
+            android:id="@+id/action_allPlaylistsFragment_to_onePlaylistFragment"
+            app:destination="@id/onePlaylistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onePlaylistFragment"
+        android:name="com.pharos.foryoutube.ui.playlist.OnePlaylistFragment"
+        android:label="fragment_one_playlist"
+        tools:layout="@layout/fragment_one_playlist" >
+        <action
+            android:id="@+id/action_onePlaylistFragment_to_videoDescriptionFragment"
+            app:destination="@id/videoDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoDescriptionFragment"
+        android:name="com.pharos.foryoutube.ui.playlist.VideoDescriptionFragment"
+        android:label="fragment_video_description"
+        tools:layout="@layout/fragment_video_description" />
+</navigation>
